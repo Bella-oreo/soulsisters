@@ -6,15 +6,17 @@ import './App.css'
 import Heading from './Heading';
 import Message from './Message';
 import Banner from './components/Banner';
+import Header from './components/Header';
 
 function App() {
   
 
   return (
     <>
-      <Heading/>
-      <Message/>
+      
+      <Header/>
       <Banner/>
+      
     </>
 
   )

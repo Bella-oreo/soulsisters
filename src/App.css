@@ -1,22 +1,44 @@
-.heading{
-
-   background-color: aliceblue;
-   color: rgb(15, 14, 31);
-   text-align: center;
-   padding: 30px;
-
+*{
+   margin: 0%;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
 }
 
+/*header area */
 
-.message{
-   background-color: rgb(208, 235, 201);
-   color: rgb(243, 244, 239);
-   text-align: center;
-   padding: 80px;
-   font-size: 50px;
-
-
+.header{
+   display: flex;
+   background-color: azure;
+   justify-content: space-between;
+   color: white;
+   padding: 15px 40px;
 }
+
+.logo{
+   font-weight: bold;
+   font-size: 24px;
+   color: brown;
+}
+
+.navlinks{
+   display: flex;
+   gap: 30px;
+}
+
+.navitems{
+   color: brown;
+   text-decoration: none;
+   font-size: 16px;
+}
+
+.navitems:hover{
+   background-color: rgb(223, 170, 170);
+   padding: 20px;
+   font-size: 20px;
+   color:black;
+}
+
 
 /*banner area*/
 
