@@ -2,9 +2,9 @@ function Heading() {
     
     return(
 
-        <h1>This is soulsisters website</h1>
+        <h1 className="heading">This is soulsisters website</h1>
 
-    )
+    ) 
 
 }
 

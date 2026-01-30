@@ -1,42 +1,45 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.heading{
+
+   background-color: aliceblue;
+   color: rgb(15, 14, 31);
+   text-align: center;
+   padding: 30px;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.message{
+   background-color: rgb(208, 235, 201);
+   color: rgb(243, 244, 239);
+   text-align: center;
+   padding: 80px;
+   font-size: 50px;
+
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*banner area*/
+
+.banner{
+   width:100%;
+   height: 600px;
+   position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bannerImage{
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   /*opacity: 0.7;*/
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.bannerText{
+   position: absolute;
+   top: 50;
+   left: 50;
+   color: aliceblue;
+   font-size: 36px;
+   text-align: center;
+   font-weight: bold;
+   transform: translate(-50%, -50%);
 }
