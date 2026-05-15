@@ -1,0 +1,40 @@
+.about-container {
+  padding: 100px 10%;
+  background-color: #F0F9F8; /* Candy Floss - Fresh and Clean */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 850px;
+  background-color: #ffffff; /* White card to make it look premium */
+  padding: 60px;
+  border-radius: 40px; /* Extra rounded for that "it-girl" aesthetic */
+  box-shadow: 0 15px 35px rgba(129, 191, 183, 0.1); /* Very subtle Wintergreen shadow */
+  border: 2px solid #F3A2BE; /* Bubble Gum border */
+  margin-top: -50px;
+}
+
+.about-title {
+  color: #D81B60; /* Brand Magenta from your logo */
+  font-family: 'Playfair Display', serif; /* Or any elegant serif font */
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-paragraph {
+  color: #4A4A4A;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* The little decorative line under the text */
+.accent-dash {
+  width: 80px;
+  height: 6px;
+  background-color: #F3A2BE; /* Bubble Gum */
+  margin: 40px auto 0;
+  border-radius: 10px;
+}

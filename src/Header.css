@@ -1,0 +1,48 @@
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Pushes logo and nav apart */
+    align-items: center; /* Centers items vertically */
+    padding: 10px 5%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #FCE4EC; /* Soft pink bottom border */
+}
+
+.logo-image {
+    height: 70px;
+    width: auto;
+    border-radius: 50%; /* Makes it a circle if it's square */
+    border: 3px solid #D81B60; /* Adds a "pop" of the brand color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle lift */
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1); /* Fun little "cutesy" interaction */
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px; /* Adds space between your links */
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #D81B60; /* The magenta from your logo! */
+}
+
+.nav-button {
+    background-color: #D81B60;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px; /* Rounded "cutesy" edges */
+    font-weight: bold;
+    cursor: pointer;
+}

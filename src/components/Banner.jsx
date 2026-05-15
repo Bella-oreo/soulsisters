@@ -6,8 +6,8 @@ export default function Banner(){
 
 
         <section className="banner">
-            <img src="./soulsistersbanner3.jpg" alt="BannerImage" className="bannerImage"/>
-            <h1 className="bannerText">Welcome to the SoulSisters Website</h1>
+            <img src="./soulsistersbanner4.jpg" alt="BannerImage" className="bannerImage"/>
+            <h1 className="bannerText">Welcome to the Zora Collective Website</h1>
         </section>
     )
 }

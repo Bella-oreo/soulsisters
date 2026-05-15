@@ -1,0 +1,78 @@
+/* The background section using your Candy Floss theme */
+.pillars-section {
+  padding: 100px 10%;
+  background-color: #F0F9F8; 
+  text-align: center;
+}
+
+.pillars-main-title {
+  color: #D81B60; /* Your Brand Magenta */
+  font-family: 'Playfair Display', serif; 
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.pillars-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.pillar-card {
+  /* High-end White Card Look */
+  background: #ffffff; 
+  padding: 50px 35px;
+  border-radius: 35px; /* Cutesy rounded corners */
+  flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+  
+  /* Smooth "Bouncy" Animation */
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  /* Softest shadow for that airy feel */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(243, 162, 190, 0.2); /* Faint Bubble Gum border */
+  position: relative;
+  overflow: hidden;
+}
+
+/* The Hover Effect */
+.pillar-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 50px rgba(216, 27, 96, 0.12); /* Magenta-tinted glow */
+  border-color: #F3A2BE; /* Highlights Bubble Gum on hover */
+}
+
+.pillar-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  /* Note: The specific color is handled by inline styles in your JSX */
+}
+
+.pillar-card p {
+  color: #5a5a5a; 
+  line-height: 1.8;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+/* Optional: Add a cutesy dot under the title */
+.pillar-card h3::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: currentColor; /* Matches the H3 color automatically */
+  margin: 10px auto 0;
+  border-radius: 10px;
+  opacity: 0.6;
+}

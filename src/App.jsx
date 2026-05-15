@@ -1,25 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-import Heading from './Heading';
-import Message from './Message';
-import Banner from './components/Banner';
+import React from 'react';
 import Header from './components/Header';
+import Banner from './components/Banner';
+import AboutSection from './components/AboutSection'; // This must be here!
+import Pillars from './components/Pillars';
+import './App.css';
 
 function App() {
-  
-
   return (
-    <>
-      
-      <Header/>
-      <Banner/>
-      
-    </>
-
-  )
+    <div className="App">
+      <Header />
+      <main>
+      <Banner />
+      <AboutSection />
+      <Pillars />
+      {/* You can add more components here as you build out the site */}
+    </main>
+    </div>
+  );
 }
 
-export default App
+export default App;

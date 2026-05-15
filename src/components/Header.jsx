@@ -1,13 +1,20 @@
 import React from "react";
+import "../Header.css";
 
 export default function Header(){
     return(
 
-        <header className="header">
-            <div className="logo">My Logo</div>
-            <nav className="navlinks">
-                <a className="navitems"href="#">Home</a>
-                <a className="navitems"href="#">Services</a>
+        <header className="header-container">
+            <div className="logo-section">
+                <img src="/logo.jpg" alt="SoulSisters Logo" className="logo-image"/>
+            </div>
+            
+            <nav className="nav-menu">
+                <a className="nav-link" href="#home">Home</a>
+                <a className="nav-link" href="#about">About</a>
+                <a className="nav-link" href="#pillars">Pillars</a>
+
+                <button className="nav-button">Join Us</button>
             </nav>
         </header>
     )
