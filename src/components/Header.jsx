@@ -13,6 +13,9 @@ export default function Header(){
                 <a className="nav-link" href="#home">Home</a>
                 <a className="nav-link" href="#about">About</a>
                 <a className="nav-link" href="#pillars">Pillars</a>
+                <a className="nav-link" href="#events">Events</a>
+
+
 
                 <button className="nav-button">Join Us</button>
             </nav>

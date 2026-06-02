@@ -1,0 +1,145 @@
+.events-section {
+  padding: 100px 10%;
+  background-color: #ffffff; /* Crisp white section background */
+  text-align: center;
+}
+
+.events-main-title {
+  color: #D81B60; /* Brand Magenta */
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.events-subtitle {
+  color: #666666;
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.event-card {
+  display: flex;
+  align-items: center;
+  background: #F0F9F8; /* Candy Floss card body background */
+  padding: 35px;
+  border-radius: 30px; /* Matched cutesy rounded theme */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+  text-align: left;
+  border: 1px solid rgba(243, 162, 190, 0.1);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(216, 27, 96, 0.08);
+}
+
+.event-date-box {
+  color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 22px;
+  min-width: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.event-date-box h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.event-date-box span {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.event-details {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.event-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.event-title {
+  font-size: 1.6rem;
+  color: #2C3E50;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.event-info {
+  color: #555555;
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.event-description {
+  color: #666666;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 650px;
+}
+
+.book-btn {
+  background: #ffffff;
+  border: 2px solid;
+  color: #2C3E50;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.book-btn:hover {
+  background-color: #D81B60; /* Pops with Brand Magenta */
+  border-color: #D81B60 !important;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Responsive view for clean display on tablet and mobile viewports */
+@media (max-width: 820px) {
+  .event-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding: 30px;
+  }
+  .event-details {
+    padding: 0;
+  }
+  .event-description {
+    margin: 0 auto;
+  }
+}

@@ -21,28 +21,35 @@
 }
 
 .nav-menu {
-    display: flex;
-    gap: 25px; /* Adds space between your links */
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: #444;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2C3E50; /* Deep crisp grey for maximum readability */
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.25s ease;
 }
 
 .nav-link:hover {
-    color: #D81B60; /* The magenta from your logo! */
+  color: #F3A2BE; /* Bubble Gum pop */
 }
 
 .nav-button {
-    background-color: #D81B60;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px; /* Rounded "cutesy" edges */
-    font-weight: bold;
-    cursor: pointer;
+  background-color: #D81B60; /* Your standout brand Magenta */
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: transform 0.2s ease;
+}
+
+.nav-button:hover {
+  transform: scale(1.05);
 }
