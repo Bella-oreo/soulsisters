@@ -76,3 +76,21 @@
   border-radius: 10px;
   opacity: 0.6;
 }
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -25,11 +25,19 @@ export default function Pillars() {
       <h2 className="pillars-main-title">The Three Pillars</h2>
       <div className="pillars-container">
         {pillarData.map((pillar, index) => (
-          <div key={index} className="pillar-card" style={{ borderTop: `8px solid ${pillar.color}` }}>
+          <div 
+            key={index} 
+            className="pillar-card animate-fade-up"
+            style={{ 
+              borderTop: `8px solid ${pillar.color}`,
+              animationDelay: `${index * 0.2}s` 
+              }}
+              >
             <h3 style={{ color: pillar.color }}>{pillar.title}</h3>
             <p>{pillar.description}</p>
           </div>
         ))}
+        {/* Decorative Elements */}
       </div>
     </section>
   );

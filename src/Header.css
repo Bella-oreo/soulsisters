@@ -32,24 +32,25 @@
   font-weight: 500;
   font-size: 1.05rem;
   transition: color 0.25s ease;
+  position: relative;
 }
 
-.nav-link:hover {
-  color: #F3A2BE; /* Bubble Gum pop */
+.nav-link.active {
+  color: #D81B60; /* Brand Magenta */
+  font-weight: 700;
 }
 
-.nav-button {
-  background-color: #D81B60; /* Your standout brand Magenta */
-  color: #ffffff;
-  padding: 10px 24px;
-  border-radius: 25px;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  margin-left: 15px;
-  transition: transform 0.2s ease;
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #F3A2BE; /* Bubble Gum */
+  transition: width 0.3s ease;
 }
 
-.nav-button:hover {
-  transform: scale(1.05);
+.nav-link.active::after, .nav-link:hover::after {
+  width: 100%;
 }

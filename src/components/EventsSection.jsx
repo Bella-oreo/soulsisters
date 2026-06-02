@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState }from 'react';
 import '../EventsSection.css';
 
 export default function EventsSection() {
+  const [filter, setFilter] = useState('All');
+
   const upcomingEvents = [
     {
       date: "30 May",
@@ -23,11 +25,28 @@ export default function EventsSection() {
     }
   ];
 
+  const filteredEvents = filter === 'All' 
+    ? upcomingEvents 
+    : upcomingEvents.filter(event => event.badge === filter);
+
   return (
     <section className="events-section">
       <h2 className="events-main-title">Upcoming Experiences</h2>
       <p className="events-subtitle">Curated spaces designed for connection, learning, and joy.</p>
-      
+
+     {/* Interactive Filter Pills */}
+      <div className="filter-button-group">
+        {['All', 'Wellness', 'Wealth', 'Whimsy'].map((type) => (
+          <button 
+            key={type}
+            className={`filter-btn ${filter === type ? 'active' : ''}`}
+            onClick={() => setFilter(type)}
+          >
+            {type}
+          </button>
+        ))}
+      </div>
+       
       <div className="events-container">
         {upcomingEvents.map((event, index) => (
           <div key={index} className="event-card">
